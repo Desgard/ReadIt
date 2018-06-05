@@ -23,7 +23,9 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("FirstActivity","click the button 1");
-                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+//                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+//                startActivity(intent);
+                Intent intent = new Intent("com.example.activitytest.ACTION_START");
                 startActivity(intent);
             }
         });
